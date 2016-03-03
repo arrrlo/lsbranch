@@ -12,6 +12,6 @@ def cli():
 	        if os.path.exists(git_dir):
 	            process = Popen(['git', '--git-dir=' + git_dir, 'branch'], stdout=PIPE, stderr=PIPE)
 	            stdout, stderr = process.communicate()
-	            print '{} ({})'.format(subdirname, stdout.replace('\n','').split('* ')[-1].split(' ')[0])
+	            print('{} ({})'.format(subdirname, stdout.replace('\n','').split('* ')[-1].split(' ')[0]))
 
 	    break
