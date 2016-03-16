@@ -3,7 +3,7 @@ import click
 from subprocess import Popen, PIPE
 
 
-@click.command()
+@click.command(help='List all directories with .git subdirectory and show current branch for each')
 def cli():
 	for dirname, dirnames, _ in os.walk('.'):
 	    
@@ -12,6 +12,6 @@ def cli():
 	        if os.path.exists(git_dir):
 	            process = Popen(['git', '--git-dir=' + git_dir, 'branch'], stdout=PIPE, stderr=PIPE)
 	            stdout, stderr = process.communicate()
-	            print('{} ({})'.format(subdirname, stdout.replace('\n','').split('* ')[-1].split(' ')[0]))
+	            click.echo('{} ({})'.format(subdirname, stdout.replace('\n','').split('* ')[-1].split(' ')[0]))
 
 	    break
