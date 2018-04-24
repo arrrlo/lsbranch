@@ -1,11 +1,13 @@
 <h1>lsbranch</h1>
 
+[![PyPI version](https://badge.fury.io/py/lsbranch.svg)](https://badge.fury.io/py/lsbranch)
+
 <p>List all directories with .git subdirectory and show current branch for each.</p>
 
 <h3>Instalation</h3>
 
 ```
-pip install git+git://github.com/arrrlo/lsbranch@master
+pip install lsbranch
 ```
 
 <h3>Usage</h3>
