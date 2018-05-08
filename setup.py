@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name='lsbranch',
-    version="0.2.0",
+    version="1.0.0",
 
     description='List all directories with .git subdirectory and show current branch for each.',
     long_description=readme(),
@@ -33,6 +33,9 @@ setup(
     packages=['lsbranch'],
     install_requires=[
         'click==6.3',
+        'colorama~=0.3',
+        'pyfiglet~=0.7.5',
+        'termcolor~=1.1.0',
     ],
 
     entry_points={
