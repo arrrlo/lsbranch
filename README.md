@@ -10,6 +10,30 @@
 pip install lsbranch
 ```
 
-<h3>Usage</h3>
+<h3>CLI Usage</h3>
 
-<p>Just go to any directory with git projects subdirectories and type "lsbranch". You'll get the list of subdirectories with current branch next to each.</p>
+```bash
+Usage: lsbranch [OPTIONS]
+
+  List all directories with .git subdirectory and show current branch for
+  each
+
+Options:
+  -r, --recursive  Recursive directory search
+  -p, --path PATH  Path to search
+  --help           Show this message and exit.
+```
+
+<p>Let's say that you want to list all git dirs in current dir, recursively</p>
+
+
+```bash
+> lsbranch -r -p .
+```
+
+<p>Let's say you just want to list all git dirs in current dir, not recursively</p>
+
+
+```bash
+> lsbranch
+```
