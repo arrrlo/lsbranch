@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name='lsbranch',
-    version="1.0.0",
+    version="1.0.2",
 
     description='List all directories with .git subdirectory and show current branch for each.',
     long_description=readme(),

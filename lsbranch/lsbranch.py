@@ -54,7 +54,8 @@ class lsBranch(object):
         process = Popen(['git', '--git-dir=' + git_dir, 'branch'],
                         stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
-        return stdout.replace('\n', '').split('* ')[-1].split(' ')[0]
+        return stdout.decode('utf-8').replace('\n', '') \
+            .split('* ')[-1].split(' ')[0]
 
     def _echo_branch(self, full_path, branch):
         """Print the path and branch in terminal"""
