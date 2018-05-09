@@ -24,14 +24,14 @@ Options:
   --help           Show this message and exit.
 ```
 
-<p>Let's say that you want to list all git dirs in current dir, recursively</p>
+<p>Let's say that you want to list all git dirs in current dir, recursively:</p>
 
 
 ```bash
 > lsbranch -r -p .
 ```
 
-<p>Let's say you just want to list all git dirs in current dir, not recursively</p>
+<p>Let's say you just want to list all git dirs in current dir, not recursively:</p>
 
 
 ```bash
